@@ -1,7 +1,10 @@
-./pyenv.cfg
+/pyvenv.cfg
+/.DS_Store
 
-./Scripts/*
-./Lib/*
-./Include/*
+/Scripts/
+/Lib/
+/Include/
 
-./.vscode/*
+/.vscode/
+
+__pycache__/
