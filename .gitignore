@@ -5,6 +5,5 @@
 /Lib/
 /Include/
 
-/.vscode/
-
+.vscode/
 __pycache__/
