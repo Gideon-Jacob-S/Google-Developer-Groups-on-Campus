@@ -1,0 +1,7 @@
+./pyenv.cfg
+
+./Scripts/*
+./Lib/*
+./Include/*
+
+./.vscode/*
