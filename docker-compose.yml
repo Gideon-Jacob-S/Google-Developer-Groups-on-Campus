@@ -1,0 +1,13 @@
+services:
+  server:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    working_dir: /app/server
+    command: node index.js
+    volumes:
+      - ./server:/app/server
+      - /app/client/node_modules
+      - /app/server/node_modules
+    ports:
+      - 5000:5000
