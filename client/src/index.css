@@ -1,0 +1,21 @@
+:root {
+    --background-color: #1B1B1B;
+    --primary-color: #4ADEDE;
+    --secondary-color: #FF6464;
+
+    --primary-text-color: #F5F5F5;
+    --secondary-text-color: #CCCCCC;
+    --highlight-text-color: #FFC107;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--primary-text-color);
+    font-family: 'BlexMono', monospace;
+    margin: 0;
+    padding: 0;
+}
