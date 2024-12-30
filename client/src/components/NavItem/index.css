@@ -1,0 +1,7 @@
+.acitve-navbar-link {
+    border-bottom: 2px solid var(--primary-color);
+    color: var(--primary-text-color) !important;
+    border-radius: 2px;
+    width: 102%;
+    text-align: center;
+}

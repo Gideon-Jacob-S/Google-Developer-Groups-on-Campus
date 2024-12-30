@@ -1,10 +1,9 @@
-import React from 'react';
 import Navbar from '../Navbar';
-import HeroBanner from './HeroBanner';
-import AboutUs from './AboutUs';
-import OurClubs from './OurClubs'; 
-import ContactUs from './ContactUs';
-import Footer from './Footer';
+import HeroBanner from '../HeroBanner';
+import AboutUs from '../HomeAboutUs';
+import OurClubs from '../HomeOurClubs'; 
+import ContactUs from '../HomeContactUs';
+import Footer from '../Footer';
 import './index.css';
 
 // Sections (..., Contributors, Join Us, Login)
@@ -16,14 +15,14 @@ import './index.css';
 
 const Home = () => {
     return (
-        <div>
+        <>
             <Navbar />
             <HeroBanner />
             <AboutUs />
             <OurClubs />
             <ContactUs />
             <Footer />
-        </div>
+        </>
     );
 };
 

@@ -1,0 +1,9 @@
+.hero-banner {
+    min-height: calc(100vh - 70px);
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

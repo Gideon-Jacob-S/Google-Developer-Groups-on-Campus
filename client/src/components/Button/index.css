@@ -1,0 +1,17 @@
+.btn-solid,
+.btn-outline {
+    border: 1px solid var(--primary-color);
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-family: 'BlexMono', monospace;
+}
+
+.btn-solid {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+}
+
+.btn-outline {
+    background-color: transparent;
+    color: var(--primary-text-color);
+}

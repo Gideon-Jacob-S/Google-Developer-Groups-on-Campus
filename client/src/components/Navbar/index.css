@@ -1,0 +1,49 @@
+.navbar-lg {
+    display: none;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 5vw;
+    /* background-color: #333; */
+}
+
+@media (min-width: 992px) {
+    .navbar-lg {
+        display: flex;
+    }
+}
+
+.navbar-login-page {
+    justify-content: center;
+}
+
+.navbar-logo {
+    height: 25px;
+}
+
+.navbar-links {
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 20px;
+}
+
+.navbar-anchor {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    color: var(--secondary-text-color);
+}
+
+.navbar-anchor-login-page {
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+}
