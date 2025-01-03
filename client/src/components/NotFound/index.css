@@ -1,0 +1,21 @@
+.not-found-countainer {
+  height: 100vh;
+  padding-top: 20vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.not-found-icon {
+    color: var(--highlight-text-color);
+    font-size: 124px;
+    margin: 0px;
+}
+
+.not-found-heading {
+    color: var(--highlight-text-color);
+    font-size: 34px;
+    margin-top: 20px;
+    /* margin: 0px; */
+}
