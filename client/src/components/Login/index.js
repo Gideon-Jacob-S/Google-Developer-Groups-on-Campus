@@ -30,7 +30,10 @@ class Login extends Component {
         Cookies.set('token', jwtToken, {expires: 90})
         Cookies.set('role', userType, {expires: 90})
 
-        this.props.history.push('/profile', {isLoginSuccess: true})
+        const {state} = this.props.location
+        const {from} = state ? state : {}
+        const {pathname} = from ? from : {pathname: '/profile'}
+        this.props.history.push(pathname, {isLoginSuccess: true})
       } else {
         console.log(response)
       }
