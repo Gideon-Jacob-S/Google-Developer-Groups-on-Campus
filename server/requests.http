@@ -1,0 +1,43 @@
+POST http://localhost:5000/api/signup
+Content-Type: application/json
+
+{
+    "collegeId": "CB242356",
+    "username": "user6",
+    "password": "user@123",
+    "email": "user6@example.com"
+}
+
+###
+POST http://localhost:5000/api/signup
+Content-Type: application/json
+
+{
+    "collegeId": "CB242355",
+    "username": "user5",
+    "password": "user@123",
+    "email": "user5@example.com",
+    "userType": "ADMIN"
+}
+
+###
+POST http://localhost:5000/api/login
+Content-Type: application/json
+
+{
+    "username": "user5",
+    "password": "user@123"
+}
+
+###
+GET http://localhost:5000/api/isadmin
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InVzZXIyIiwiaWF0IjoxNzM1NjU0Nzg1fQ.Qmrg0s9pQyTo29vAG4QkoKbMoVBY5wNS8iXga4XHNns
+
+###
+GET http://localhost:5000/api/isadmin
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InVzZXI1IiwiaWF0IjoxNzM1NjYxNjExfQ.zSiyDJ1Fnujic9B5iOvNplz9LQDGBM0IlewtR3OZq9g
+
+###
+GET http://localhost:5000
+
+###
