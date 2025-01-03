@@ -4,6 +4,9 @@
     padding: 10px 20px;
     border-radius: 8px;
     font-family: 'BlexMono', monospace;
+    font-size: 16px;
+    cursor: pointer;
+    outline: none;
 }
 
 .btn-solid {

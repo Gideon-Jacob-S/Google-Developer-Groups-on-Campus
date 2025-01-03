@@ -1,0 +1,6 @@
+.admin-route-loading {
+    padding-top: 20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

@@ -1,15 +1,12 @@
-import Navbar from '../Navbar';
-import './index.css';
+import NavbarWrapper from '../NavbarWrapper'
+import './index.css'
 
 const NotFound = () => {
-    return (
-        <>
-            <Navbar />
-            <div className="about-us">
-                <h1>404 Not Found</h1>
-            </div>
-        </>
-    );
-};
+  return (
+    <NavbarWrapper>
+      <h1>404 Not Found</h1>
+    </NavbarWrapper>
+  )
+}
 
-export default NotFound;
+export default NotFound

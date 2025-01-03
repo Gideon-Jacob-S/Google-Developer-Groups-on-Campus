@@ -1,0 +1,36 @@
+.nav-wrapper-bg-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+@media (min-width: 992px) {
+    .nav-wrapper-bg-container {
+        padding-right: 5px;
+        padding-bottom: 5px;
+    }
+}
+
+.nav-wrapper-body-container {
+    flex-grow: 1;
+    overflow: auto;
+}
+
+.nav-wrapper-body-container::-webkit-scrollbar {                            
+    width: 5px;
+}
+
+.nav-wrapper-body-container::-webkit-scrollbar-thumb {
+    background-color: #94A3B800 !important;
+    border-radius: 6px;
+}
+
+@media (min-width: 992px) {
+    .nav-wrapper-body-container::-webkit-scrollbar-thumb {
+        background-color: #94A3B822 !important;
+    }
+    
+    .nav-wrapper-body-container::-webkit-scrollbar-thumb:hover {
+        background-color: #94A3B844 !important;
+    }
+}

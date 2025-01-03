@@ -1,16 +1,28 @@
 import './index.css'
 
-const Button = ({type, children, ...props}) => {
-    let className;
-    if (type === "solid") 
-        className = "btn-solid"
-    else if (type === "outline")
-        className = "btn-outline"
-    else if (type === "cta")
-        className = "btn-solid"
+const Button = ({type, children, className, ...props}) => {
+    let mainClassName;
 
+    if (type === "solid") 
+        mainClassName = "btn-solid"
+    
+    else if (type === "outline")
+        mainClassName = "btn-outline"
+    
+    else if (type === "cta")
+        mainClassName = "btn-solid"
+
+    else if (type === "submit") {
+        return (
+            <button className={`${"btn-solid"} ${className}`} type={type} {...props}>
+                {children}
+            </button>
+        )
+    }
+
+    
     return (
-        <button className={className} {...props}>
+        <button className={`${mainClassName} ${className}`} {...props}>
             {children}
         </button>
     )

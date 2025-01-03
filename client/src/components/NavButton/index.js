@@ -1,18 +1,19 @@
-import { Link } from 'react-router-dom';
 import Button from '../Button';
-
 import './index.css'
 
 const NavButton = props => {
-    const {buttonDetails, userRole} = props
-    const {displayName, role, path, style, onClick} = buttonDetails
+    const {buttonDetails, userRole, history} = props
+    const {displayName, role, style, onClick} = buttonDetails
+    const onNavigate = () => {
+        onClick(history)
+    }
 
     if (role.includes(userRole) || role.includes("ANY"))
         return (
             <li>
-                <Link className="navbar-anchor" to={path} onClick={onClick}>
-                    <Button type={style}>{displayName}</Button>
-                </Link>
+                <Button type={style} onClick={onNavigate}>
+                    {displayName}
+                </Button>
             </li>
         )
 }

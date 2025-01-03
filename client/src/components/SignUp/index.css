@@ -1,0 +1,70 @@
+.signup-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding-top: 10vh;
+}
+
+.signup-form {
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid var(--primary-color);
+    min-width: 300px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.signup-heading {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.signup-form input {
+    font-family: "BlexMono";
+    background-color: var(--background-color);
+    color: var(--primary-text-color);
+
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.signup-form input:focus {
+    outline: none;
+    border: 1px solid var(--primary-color);
+}
+
+.signup-form .password-container {
+    margin-top: 10px;
+    padding-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.signup-form .password-container:focus-within {
+    border: 1px solid var(--primary-color);
+}
+
+.signup-form .password-container input {
+    border: none;
+    margin: 0px;
+    flex-grow: 1;
+}
+
+.signup-form .error-msg {
+    color: var(--highlight-text-color);
+    font-size: 10px;
+    margin: 0px;
+}
+
+.signup-form button {
+    margin-top: 10px;
+}
