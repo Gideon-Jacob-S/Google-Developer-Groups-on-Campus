@@ -1,4 +1,4 @@
-import { Component } from 'react'
+import {Component} from 'react'
 import {Route, Redirect} from 'react-router-dom'
 import Cookies from 'js-cookie'
 import axios from 'axios'
@@ -19,7 +19,7 @@ class AdminRoute extends Component {
   getIsUserAdmin = async options => {
     try {
       const response = await axios.get('/api/isadmin', options)
-  
+
       if (response.status === 200) {
         const {isAdmin} = response.data
         return isAdmin
@@ -63,7 +63,7 @@ class AdminRoute extends Component {
         <Redirect
           to={{
             pathname: '/profile',
-            state: {isUnauthorized: true},
+            state: {isUnauthorized: true, from: this.props.location},
           }}
         />
       )
@@ -74,7 +74,7 @@ class AdminRoute extends Component {
         <Redirect
           to={{
             pathname: '/login',
-            state: {isUnauthorized: true},
+            state: {isUnauthorized: true, from: this.props.location},
           }}
         />
       )

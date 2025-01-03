@@ -8,7 +8,7 @@ const UserRoute = props => {
       <Redirect
         to={{
           pathname: '/login',
-          state: {isUnauthorized: true},
+          state: {isUnauthorized: true, from: this.props.location},
         }}
       />
     )
