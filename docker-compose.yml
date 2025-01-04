@@ -1,13 +1,30 @@
 services:
   server:
-    build:
-      context: .
-      dockerfile: Dockerfile
-    working_dir: /app/server
-    command: node index.js
-    volumes:
-      - ./server:/app/server
-      - /app/client/node_modules
-      - /app/server/node_modules
+    build: ./server
+    command: npm run dev
+    develop:
+      watch: 
+        - action: sync
+          path: ./server
+          target: /server
+          ignore: 
+            - node_modules/
+        - action: rebuild
+          path: ./server/package.json
     ports:
       - 5000:5000
+  
+  client:
+    build: ./client
+    command: npm run dev-exposed
+    develop:
+      watch: 
+        - action: rebuild
+          path: ./server/package.json
+    environment:
+      - CHOKIDAR_USEPOLLING=true
+    volumes:
+      - ./client:/client:delegated
+      - /client/node_modules/
+    ports:
+      - 3000:3000

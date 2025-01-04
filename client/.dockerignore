@@ -1,5 +1,7 @@
-/previous/
-*.env
+# docker files
+.dockerignore
+Dockerfile
+docker-compose.yml
 
 # Logs
 logs
