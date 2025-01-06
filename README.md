@@ -7,5 +7,5 @@ To run the Express server,
 - Run the command below on your terminal and wait until the server is live.
 
 ```bash
-docker-compose up --build
+docker-compose up --watch
 ```

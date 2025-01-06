@@ -1,0 +1,8 @@
+# docker files
+.dockerignore
+Dockerfile
+docker-compose.yml
+
+# misc
+node_modules/
+/requests.http
